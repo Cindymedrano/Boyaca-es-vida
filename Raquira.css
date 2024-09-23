@@ -1,0 +1,19 @@
+/*resert de estilos de navegador elimina todo lo que por defecto trae las paginas*/
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*estilos de header*/
+
+
+
+.header-content {
+    background-image: url(imagenesproyecto/plazaraquira2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 180px;
+}

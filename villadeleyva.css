@@ -9,23 +9,131 @@
 /*estilos de header*/
 
 
-
 .header-content {
-    background-image: url(imagenesproyecto/villade.jfif);
+    background-image: url(imagenesproyecto/PanoramicaLeyva.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 150px;
+    padding: 180px;
+    position: relative;
 }
 
-.text-section {
+.text-section, p {
+    padding: 2px;
+    margin-bottom: 10px;
+    font-family: Baskerville Old Face;
+    font-weight: normal;
+    font-size: 130%;
+    margin:1%;
+    text-align: center;
+  
+}
 
+h1 {
+    color:blue;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60PX;
+    text-align: center;
+}
+
+.container {
+
+    list-style: none; /*eliminar los puntos de la lista*/
+    display: flex; /* para alinear elementos*/
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0; /*espacio interior en la parte superior e inferior*/
+    gap: 15px;/*espacio entre elementos*/
+    margin-top: 10px; /*espacio superior*/
     
-    padding: 90px;
-    margin-bottom: 20px;
+}
+
+.li, a {
+
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 29px;
+}
+
+.option, h2{
+    color: blue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+    margin: 80px;
+    font-size: 40px;
+
+}
+.gastronomia-section {
+    display: flex;
+    grid-template-columns: repeat(auto-fit,minmax(500px, 1fr));
+    gap: 5px;
+    padding: 5px;    
+    margin: 20px;
+}
+
+.image-logo {
+
+    position: relative;
+    overflow: hidden;
+    border-radius:2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 
+.image-logo img {
+
+    width: 90%;
+    height: 180px;
+    border: none;
+}
+
+
+.hospedaje-section {
+    display: flex;
+    grid-template-columns: repeat(auto-fit,minmax(500px, 1fr));
+    gap: 5px;
+    padding: 5px; 
+    margin: 20px;   
+}
+
+.image-logo {
+
+    position: relative;
+    overflow: hidden;
+    border-radius:2px;
+}
+
+.image-logo img {
+
+    width: 90%;
+    height: 180px;
+    border: none;
+}
+
+
+.sitios-section {
+    display: flex;
+    grid-template-columns: repeat(auto-fit,minmax(500px, 1fr));
+    gap: 5px;
+    padding: 5px; 
+    margin: 20px;   
+}
+
+.image-logo {
+
+    position: relative;
+    overflow: hidden;
+    border-radius:2px;
+}
+
+.image-logo img {
+
+    width: 90%;
+    height: 180px;
+    border: none;
+}
 
    
     
