@@ -53,17 +53,22 @@ h1 {
     justify-content: center;
     flex-wrap: wrap;
     padding: 10px 0; /*espacio interior en la parte superior e inferior*/
-    gap: 80px;/*espacio entre elementos*/
+    gap: 20px;/*espacio entre elementos*/
     margin-top: 1%; /*espacio superior*/
     
 }
 
 .image-texto, img {
 
-    width: 250px;  /* Ancho fijo */
-     height: 350px; /* Altura fija */
+    width: 330px;  /* Ancho fijo */
+     height: 230px; /* Altura fija */
      object-fit: cover; /* Ajusta la imagen dentro del área sin distorsionarla */
-     border: 1px solid #0c0c0c;  /* Añadir un borde opcional */
+     border-radius: 5px;
+     box-shadow: 10px 8px 8px  rgba(26, 16, 160, 0.089);
+}
+
+.image-texto, img:hover{
+    transform: scale(1.1);
 }
 
 .li, a {
@@ -98,8 +103,8 @@ h1 {
 
     position: relative;
     overflow: hidden;
-    border-radius:2px;
-    box-shadow: 0 4px 8px rgba(3, 3, 3, 0.1); 
+    border-radius:7px;
+    box-shadow: 4px 4px 8px rgba(3, 3, 3, 0.1); 
     background-color: beige;
     
 }
@@ -109,9 +114,8 @@ h1 {
     width: 255px;  /* Ancho fijo */
     height: 400px; /* Altura fija */
     object-fit: cover; /* Ajusta la imagen dentro del área sin distorsionarla */
-    border: 1px solid #0c0c0c; /* Añadir un borde opcional */
     gap: 50px;
- 
+    border-radius: 5px;
 }
 
 .hospedaje-section {

@@ -1,0 +1,34 @@
+{
+    "recomendadosTuristicos":[
+{
+    "nombre":"Villa de Leyva",
+    "imagen": "Imagenes/Villadeleyva/PanoramicaLeyva.jpg"
+   
+},
+{
+    "nombre":"Paipa",
+    "imagen": "Imagenes/Paipa/Paipa.jpg"
+    
+},
+{
+    "nombre":"Raquira",
+      "imagen": "Imagenes/Paipa/Paipa.jpg"
+    
+},
+{
+    "nombre": "Tunja",
+    "imagen": "Imagenes/PaginaPrincipal/Tunja2.jpg"
+},
+{
+    "nombre": "Mongui",
+    "imagen": "Imagenes/Mongui/Mongui.jpg"
+},
+{
+     "nombre": "El cocuy",
+     "imagen": "Imagenes/Elcocuy/cocuyprinc.jpg"
+     
+}
+        
+    ]
+}
+
