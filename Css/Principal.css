@@ -67,7 +67,7 @@ h3{
 
 .header{
 background-color: rgb(247, 250, 248);
-padding: 20px;
+padding: 5px;
 text-align: center;
 border-bottom: 2px solid #6fa784;
 position: relative;
@@ -76,16 +76,16 @@ display: flex;
 }
 
 .header-content {
- display: flex;
+ display: none;
  align-items: center;
  justify-content: center;
- gap: 20px;  
+ gap: 10px;  
  flex: auto; 
 }
 
 .logo{
-    width: 130px;
-    height: 130px;
+    width: 10px;
+    height: 10px;
     background-color: #dfdde2;
     display: flex;
     align-items: center;
@@ -105,12 +105,11 @@ display: flex;
 
 
 .nav nav ul li {
-float:none;
+float: none;
 list-style-type:none;
-padding:5px;
-background:#094372;
-margin-left:10px;
-border-radius: 10%;
+padding: 5%;
+border-radius: 100%;
+
 
 }
 .nav nav ul li:hover {
@@ -216,7 +215,7 @@ color:black ;
 
 
 .footer .grupo-1 .box figure img {
-    width: 130px;
+    width: 180px;
 }
 
 .footer .grupo-1 .box h2{
