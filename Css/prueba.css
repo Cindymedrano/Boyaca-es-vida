@@ -1,0 +1,297 @@
+/*resert de estilos de navegador elimina todo lo que por defecto trae las paginas*/
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*main*/
+
+/*carrousel*/
+
+.slider-box{
+    width: 1080px;
+    height: 400px;
+    margin: 10px auto 0;
+    overflow: hidden;
+}
+
+.slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.slider-box img {
+    width: 100%;
+    display: flex;
+    
+}
+
+@keyframes slide{
+    0% { margin-left: 0;}
+    30% { margin-left: 0;}
+
+    35% { margin-left: -100%;}
+    70% { margin-left: -100%;}
+
+    75% { margin-left:-200%;}
+    100% { margin-left: -200%;}
+}
+
+/*section text-section*/
+
+.text-section h1{
+    color:rgb(201, 122, 19);
+    font-size: 60PX;
+    text-align: center;
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
+   
+}
+
+.text-section, p {
+    
+        margin-bottom: 2px;
+        font-size: 20PX;
+        text-align: center;  
+        color: rgb(109, 106, 106);
+        font-family: "Gamja Flower", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        
+        
+    }
+    
+.text-section h3 {
+        color: blue;
+        font-family: "Gloria Hallelujah", cursive;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        margin-bottom: 3px;
+        font-size: 40px;
+    }
+    
+    /*sections*/
+
+.container {
+    width: 100%;
+    display: flex;
+    max-width: 1300px;
+    align-items: center; 
+    object-fit: cover;
+    padding: 30px;
+    
+}
+
+.card{
+    width: 100%;
+    margin: 5px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    
+
+}
+.card:hover{
+    box-shadow:  5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+    
+}
+
+.card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    
+
+}
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido p{
+    line-height: 1;
+    color: #6a6a6a; 
+    font-size: 18px;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+.card .contenido h2{
+    font-weight: 400;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Gloria Hallelujah", cursive;
+    font-style: normal;
+    color: black;
+}
+
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 6px;
+    margin-top: 3px;
+    color: #2fb4cc;
+    border: 1px  solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    
+
+}
+.card .contenido a:hover{
+    background: #2fb4cc;
+    color: #fff;
+}
+
+.option h2{
+    font-size: 45px;
+    padding: 50px;
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: blue;
+}
+
+.option h4{
+    font-size: 25px;
+    padding: 20px;
+    font-family: "Gloria Hallelujah", cursive;
+    font-style: normal;
+    color: black;
+    font-weight: bold;
+}
+
+/*gastronomia*/
+
+.gastronomia-section{
+
+    width: 100%;
+    display: flex;
+    max-width: 1300px;
+    align-items: center; 
+    object-fit: cover;
+    margin-bottom: 3%;
+    
+
+}
+
+.cards{
+    width: 100%;
+    margin: 1px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.cards:hover:hover{
+    box-shadow:  5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(4%);
+    
+}
+
+.cards img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    
+
+}
+.cards .contenido{
+    padding: 2px;
+    text-align: center;
+}
+
+.cards .contenido, p{
+    
+    color: #6a6a6a;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.cards .contenido h2{
+    
+    margin-bottom: 2px;
+    margin-top: 1%;
+    font-size: 24px;
+    padding: 8%;
+    font-weight: bold;
+    
+    
+}
+
+.cards .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 6px;
+    margin-top: 3px;
+    color: #2fb4cc;
+    border: 1px  solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+
+    
+
+}
+.cards .contenido a:hover{
+    background: #2fb4cc;
+    color: #fff;
+}
+
+/*alojamiento*/
+
+.alojamiento-section{
+
+    width: 100%;
+    display: flex;
+    max-width: 1300px;
+    align-items: center; 
+    object-fit: cover;
+    margin-bottom: 3%;
+
+}
+
+
+
+/*sitios*/
+
+.sitios-section{
+
+    width: 100%;
+    display: flex;
+    max-width: 1300px;
+    align-items: center; 
+    object-fit: cover;
+    margin-bottom: 3%;
+
+}
+
+body{
+
+    background-color: #d2e0d923;
+}
+
