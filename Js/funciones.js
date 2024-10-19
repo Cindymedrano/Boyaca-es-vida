@@ -20,7 +20,7 @@ function buscar() {
     }
 
     else if (busqueda == "villa de leyva") {
-        window.location.href = "../Villa de leyva.html";
+        window.location.href = "../VillaDeLeyva.html";
     }
 
     else if (busqueda == "mongui") {
