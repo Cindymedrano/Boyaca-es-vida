@@ -1,249 +1,367 @@
+/*resert de estilos de navegador elimina todo lo que por defecto trae las paginas*/
 *{
-    margin: 0;
+    margin: 0; 
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
-a{
-    font-family: "Red Hat Display", sans-serif;justify-content: center;
-    font-size: 15px;   
-    color: #2666a7;
-    text-align: justify;
-
-}
-.content{
-margin-top: -60px;
-padding-left: 10%;
-padding-right: 10%;
-}
-
-.container-fluid{
-    width: 80%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.container figure{
-    position: relative;
-    height: 50px;
-    line-height: 0;
-}
-figure img{
-    width: 100%;
-    height: 100%;
-}
-.slide{
-
-    bottom: 100px;
-    display: flex;
-    justify-content: space-around;    
-
-}
-
-h3{
-    font-family: "Red Hat Display", sans-serif;justify-content: center;
-     font-size: 20px;   
-     color: #2666a7;
-     text-align: justify;  
-}
-
-.slide img{
-    width: 450px;
-    height: 250px;
-    margin: 40px;
-    border-radius: 10px;
-    transition: 0.5s;
-    cursor: pointer;
-    margin-bottom: 20px;
-    display: flex;
-    border-bottom: 2px solid #6fa784;
-
-}
-.slide img:hover{
-    transform: scale(1.3);
-}
-
+/*estilo boton home logo*/
 .header{
-background-color: rgb(247, 250, 248);
-padding: 5px;
-text-align: center;
-border-bottom: 2px solid #6fa784;
-position: relative;
-display: flex;
-
+    background-color:#f7fcfc ;
+}
+.nav img{
+    width: 110px;
+    height: 110px;
+    margin-left: 150px;
 }
 
-.header-content {
- display: flex;
- align-items: center;
- justify-content: center;
- gap: 10px;  
- flex: auto; 
-}
-
-.logo{
-    width: 10px;
-    height: 10px;
-    background-color: #dfdde2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    transform: scale(0.3);
-
-}
+/*estilos de barra de busqueda*/
 
 .search{
-    border-radius: 12px; /*redondea las esquinas del borde exterior de un elemento*/
-    height: 40px;
-    width: 300px;
-
-  
-}
-
-
-.nav nav ul li {
-float: none;
-list-style-type:none;
-padding: 5%;
-border-radius: 100%;
-
-
-}
-.nav nav ul li:hover {
-background-color:#46aa7b;
-}
-.nav nav a {
-color:white;
-font-weight:bolder;
-text-decoration:none;
-
-
-}
-.nav nav a:hover {
-color:black ;
-}
-
-
-.SearchBar-module_searchBarWrapper__FWM7Z {
-    display: flex;
-    width: 900px;
-    height: auto;
-    margin-left: 80px;
-
-}
-
-
-.SearchBar-module_searchBtnIcon__2L2s0 {
-    background: rgb(9, 10, 9);
-    width: 46px;
-    height: 46px;
-    margin-left: -40px;
-    cursor: pointer;
-    display: flex;
-}
-
-
-.SearchBar-module_searchBar__MCR66 {
-    display: flex;
-    width: 100%;
-    padding-left: 24px;
-    border-radius: 30px;
-    margin: 0;
-    background: #dbd9d9;
-    height: 40px;
-}
-
-.SearchBar-module_sr-only__3UWD4 {
     position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    border: 0
+    left: 25%;
+    top: 6%;
+    padding: 6px;
 }
 
-.SearchBar-module_searchBar__Input__1kPKS {
-    border: none;
-    background: transparent;
-    padding: 10px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
-    color: #076431;
-    height: 100%;
-    letter-spacing: .2px;
-    outline: none;
-    display: flex;
-}
-
-
-.SearchBar-module_searchBtnIcon__2L2s0 {
-    border-radius: 30px;
-    position: relative;
-    right: 0;
+input{
+    outline: none ;
     box-sizing: border-box;
-    z-index: 10;
-    display: flex;
-    justify-content:center ;
-    align-items: center;
-    border: 1px solid #495867;
-   }
+    height: 28px ;
+    width: 600px;
+    padding: 0px 8px;
+    color: #000;
+    border-radius: 50px;
+    font-size: 15px;
+    border: 1px solid #c5c7c9;
+    text-align: left;
+    background: white;
+    font-family:"Gloria Hallelujah" ;
+}
 
+ .btn {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    background: rgb(7, 7, 7); 
+ }
 
+ .btn i{
+    font-size: 20px;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+ }
 
-   
-  body {
-    background-color: #f0f2f5;
+ /* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
   }
 
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    width: 1350px;
+    height: 500px;
+    margin: 0px auto 0;
+    overflow: hidden;
+  }
+  
+  .carousel-item > img {
+    margin-top: 100px;
+    justify-content: space-around;   
+    width: 1350px;
+    height: 500px;
+  }
+
+
+/*section text-section*/
+
+.text-section h1{
+    color:rgb(201, 122, 19);
+    font-size: 60PX;
+    text-align: center;
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.text-section, p{
+        margin-bottom: 2px;
+        margin-top: 0;
+        font-size: 18PX;
+        text-align: center;  
+        color: rgb(65, 63, 63);
+        font-family: "Gloria Hallelujah", cursive;
+        font-weight: 300;
+        font-style: normal;  
+    }
+    
+.text-section h3 {
+        color: rgb(201, 122, 19);
+        font-family: "Gloria Hallelujah", cursive;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        margin-bottom: 3px;
+        font-size: 30px;
+    }
+    
+    /*sections*/
+
+.container {
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    align-items: center; 
+    object-fit: cover;
+    padding: 40px;   
+}
+
+.card{
+    width: 100%;
+    margin: 5px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover{
+    box-shadow:  5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);   
+}
+
+.card img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.card .contenido{
+    padding: 10px;
+    text-align: center;
+}
+
+.card .contenido p{
+    line-height: 1;
+    color: #6a6a6a; 
+    font-size: 18px;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;    
+}
+.card .contenido h2{
+
+    font-weight: 400;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Gloria Hallelujah", cursive;
+    font-style: normal;
+    color: black;
+}
+
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 6px;
+    margin-top: 5%;
+    color: #2fb4cc;
+    border: 1px  solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.card .contenido a:hover{
+    background: #2fb4cc;
+    color: #fff;
+}
+
+.option h2{
+    font-size: 45px;
+    padding: 50px;
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(201, 122, 19);
+}
+
+.option h4{
+    font-size: 25px;
+    padding: 20px;
+    font-family: "Gloria Hallelujah", cursive;
+    font-style: normal;
+    color: black;
+    font-weight: bold;
+}
+
+@media(max-width:768px)
+{
+    .card{
+        width: 100%;
+    }
+}
+/*gastronomia*/
+
+.gastronomia-section{
+
+    width: 100%;
+    display: flex;
+    max-width: 1300px;
+    align-items: center; 
+    object-fit: cover;
+    margin-bottom: 1%; 
+    margin-top:0;
+}
+
+.cards{
+    width: 100%;
+    margin: 1px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.cards:hover:hover{
+    box-shadow:  5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(4%);
+    
+}
+
+.cards img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.cards .contenido{
+    padding: 2px;
+    text-align: center;
+}
+
+.cards .contenido, p{
+    
+    color: #6a6a6a;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cards .contenido h2{
+    
+    margin-bottom: 2px;
+    margin-top: 1%;
+    font-size: 24px;
+    padding: 8%;
+    font-weight: bold;  
+}
+
+.cards .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 6px;
+    margin-top: 3px;
+    color: #2fb4cc;
+    border: 1px  solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.cards .contenido a:hover{
+    background: #2fb4cc;
+    color: #fff;
+}
+
+/*alojamiento*/
+
+.alojamiento-section{
+
+    width: 100%;
+    display: flex;
+    max-width: 1300px;
+    align-items: center; 
+    object-fit: cover;
+    margin-bottom: 3%;
+}
+
+/*sitios*/
+
+.sitios-section{
+
+    width: 100%;
+    display: flex;
+    max-width: 1300px;
+    align-items: center; 
+    object-fit: cover;
+    margin-bottom: 3%;
+}
+
+body{
+
+    background-color: #d2e0d923;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 /*estilos del footer*/
 
 .footer {
     width: 100%;
-    background-color: #0a141d;
-    margin-top: 20%;
-    
+   /* height: 20%;*/
+    background-color: #242323;
+ /*   margin-top: 5%;  */ 
 }
+
 .footer .grupo-1{
     width: 100%;
     max-width: 1200px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 45px 0px
-
+    grid-gap: 30px;
+    padding: 5px 0px
 }
 
 .footer .grupo-1 .box figure{
     width: 100%;
-    height: 80%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 .footer .grupo-1 .box figure img {
     width: 180px;
 }
 
 .footer .grupo-1 .box h2{
-    color: #fff;
-    margin-bottom: 25px;
+    color: white;
+    margin-bottom: 5px;
     font-size: 20px;
+    font-family: "Gloria Hallelujah", cursive;
+    text-align: center;
+    font-weight: bold;
 }
 
 .footer .grupo-1 .box p{
-    color: #efefef;
-    margin-bottom: 10px;
+    color:#efefef;
+    margin-bottom: 5px;
+    font-family: "Gloria Hallelujah", cursive ;
+    font-size: 16px;
 }
 
 .footer  .grupo-1 .red-social a{
@@ -251,20 +369,21 @@ color:black ;
     text-decoration: none;
     width: 45px;
     height: 45px;
-    line-height: 45px;
+    line-height: 50px;
     color: #fff;
-    margin-right: 10px;
-    background-color: #0d2033;
-    text-align: center;
+    margin-right: 10%;
+    background-color: #191c1f;
     transition: all 300ms ease;
+    text-align: center; 
+
 }
 
 .footer .grupo-1 .red-social a:hover{
-    color: rgb(56, 180, 93);
+    color: rgb(120, 236, 105);
 }
 
 .footer .grupo-2{
-    background-color: #0a1a2a;
+    background-color: #353636;
     padding: 15px 10px;
     text-align: center;
     color: #fff;
@@ -272,24 +391,15 @@ color:black ;
 
 .footer .grupo-2 small{
     font-size: 15px;
-
 }
 
-
-/* Carousel base class */
-.carousel {
-    margin-bottom: 4rem;
-  }
-
-  /* Declare heights because of positioning of img element */
-  .carousel-item {
-    height: 60rem;
-    width: 130rem;
-  }
-  .carousel-item > img {
-    margin-top: 100px;
-    justify-content: space-around;   
-    height: 60rem;
-    width: 130rem; 
-  }
-  
+/*footer responsivo*/
+@media (max-width: 800px) {
+    .footer .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+        padding: 15px 0px;  
+        height: 50%;
+}    
+}
