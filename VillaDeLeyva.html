@@ -33,19 +33,21 @@
     </header>
 
     <main>
-        <div class="slider-box">
-            <ul>
-                <li>
-                    <img src="Imagenes/Villadeleyva/carousel/villa-de-leyva.jpg">
-                </li>
-                <li>
-                    <img src="Imagenes/Villadeleyva/carousel/plaza.jpg">
-                </li>
-                <li>
-                    <img src="Imagenes/Villadeleyva/carousel/pozos.jpg">
-                </li>
-            </ul>
-        </div>
+        <section class="box">
+            <div class="slider-box">
+                <div class="slider">
+                    <img id="slider1" src="Imagenes/Villadeleyva/carousel/plaza.jpeg">
+                    <img id="slider2" src="Imagenes/Villadeleyva/carousel/pozos.jpg">
+                    <img id="slider3" src="Imagenes/Villadeleyva/carousel/villa-de-leyva.jpeg">
+                </div>
+                <div class="slider-nav">
+                    <a href="#slider1"></a>
+                    <a href="#slider2"></a>
+                    <a href="#slider3"></a>
+                </div>
+            </div>
+        </section>
+
         <section>
             <div class="text-section">
                 <p>
@@ -291,7 +293,9 @@
         <script src="Js/funciones.js"></script>
         <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </body>
-<footer class="footer">
+
+
+<footer class="footer" id="footer"> 
     <div class="grupo-1">
         <div class="box">
             <figure>
@@ -316,5 +320,5 @@
         <small>&copy; 2024 <b>Boyacá es vida</b> - Todos los derechos reservados.</small>
     </div>
 </footer>
-
+  
 </html>
