@@ -19,7 +19,7 @@ function buscar() {
         window.location.href = "../Tunja.html";
     }
 
-    else if (busqueda == "villa de leyva"|| "VILLA DE LEYVA") {
+    else if (busqueda == "villa de leyva" || "VILLA DE LEYVA") {
         window.location.href = "../VillaDeLeyva.html";
     }
 
