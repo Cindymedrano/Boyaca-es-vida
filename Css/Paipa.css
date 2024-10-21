@@ -59,56 +59,54 @@ input{
     text-align: center;
  }
 
-/*carrousel*/
+ /*carrousel*/
 
-.slider-box{
-    width: 1350px;
-    height: 380px;
-    margin: 0px auto 0;
-    overflow: hidden;
-}
-
-.slider-box ul{
-    display: flex;
-    padding: 0;
-    width: 300%;
-    animation: slide 20s infinite alternate ease-in-out;
-}
-
-.slider-box li{
-    width: 100%;
-    list-style: none;
+.slider-box {
     position: relative;
+    max-width: 1350px;
+    margin: 0 auto;
 }
 
-.slider-box img {
-    width: 100%;
-    display: flex;   
+.slider{
+    display: flex;
+    aspect-ratio: 16 / 9; /*definir como se va a ver la imagen*/
+    overflow-x: hidden; /*parte de la imagen que salga de contenedor se oculte*/
+    scroll-snap-type: x mandatory; /*establecer como se desplaza la imagen*/
+    scroll-behavior: smooth; /*como sera el movimiento en la transicion*/
+    box-shadow: 0 .25rem 5rem #21212126;
+    border-radius: .7rem;
+    width: 1340px;
+    height: 360px;
 }
 
-@keyframes slide{
-    0% { margin-left: 0;}
-    30% { margin-left: 0;}
-
-    35% { margin-left: -100%;}
-    70% { margin-left: -100%;}
-
-    75% { margin-left:-200%;}
-    100% { margin-left: -200%;}
-}
-/* para que sea responsivo el carrousel*/
-@media(max-width:991px){
-    body {
-        padding: 10px;
-    }
-
-    .slider-box{
-        width: 100%;
-        height: 600px;
-    } 
+.slider img{
+    flex: 1 0 100%; /*cuanto va a crecer cuando tenga un espacio a uno -que tan pequeño-tamañoelemento*/
+    scroll-snap-align: start;/*que se posicione sobre primer elemento del scroll*/
+    object-fit: cover;
 }
 
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%; /*boton centrado*/
+    transform: translateX(-50%);
+    z-index: 1; /*establecer botones una carta antes de la imagen*/
+}
 
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: .75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover{
+    opacity: 1;
+}
 /*section text-section*/
 
 .text-section h1{
@@ -152,6 +150,7 @@ input{
     align-items: center; 
     object-fit: cover;
     padding: 40px;   
+    margin: 0 auto;
 }
 
 .card{
@@ -251,6 +250,8 @@ input{
     object-fit: cover;
     margin-bottom: 1%; 
     margin-top:0;
+    margin: 0 auto;
+
 }
 
 .cards{
@@ -324,6 +325,7 @@ input{
     align-items: center; 
     object-fit: cover;
     margin-bottom: 3%;
+    margin: 0 auto;
 }
 
 /*sitios*/
@@ -335,7 +337,7 @@ input{
     max-width: 1300px;
     align-items: center; 
     object-fit: cover;
-    margin-bottom: 3%;
+    margin: 0 auto;
 }
 
 body{
@@ -350,9 +352,8 @@ body{
 
 .footer {
     width: 100%;
-   /* height: 20%;*/
     background-color: #242323;
- /*   margin-top: 5%;  */ 
+    margin-top: 5%; 
 }
 
 .footer .grupo-1{

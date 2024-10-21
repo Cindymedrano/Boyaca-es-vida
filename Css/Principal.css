@@ -40,7 +40,7 @@ input{
     font-family:"Gloria Hallelujah" ;
 }
 
- .btn {
+.btn{
     position: absolute;
     right: 0px;
     top: 0;
@@ -49,8 +49,9 @@ input{
     border-radius: 50%;
     text-align: center;
     cursor: pointer;
-    background: rgb(7, 7, 7); 
+    background: rgb(12, 12, 12); 
  }
+
 
  .btn i{
     font-size: 20px;
@@ -61,19 +62,19 @@ input{
 
  /* Carousel base class */
 .carousel {
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
   }
 
   /* Declare heights because of positioning of img element */
   .carousel-item {
     width: 1350px;
-    height: 500px;
+    height: 370px;
     margin: 0px auto 0;
     overflow: hidden;
   }
   
-  .carousel-item > img {
-    margin-top: 100px;
+  .carousel-item  img {
+    margin-top: 2px;
     justify-content: space-around;   
     width: 1350px;
     height: 500px;
@@ -82,38 +83,17 @@ input{
 
 /*section text-section*/
 
-.text-section h1{
-    color:rgb(201, 122, 19);
-    font-size: 60PX;
-    text-align: center;
-    font-family: "Gloria Hallelujah", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-weight: bold;
-    margin-bottom: 2px;
-}
-
 .text-section, p{
         margin-bottom: 2px;
         margin-top: 0;
-        font-size: 18PX;
+        font-size: 130PX;
         text-align: center;  
         color: rgb(65, 63, 63);
         font-family: "Gloria Hallelujah", cursive;
         font-weight: 300;
         font-style: normal;  
     }
-    
-.text-section h3 {
-        color: rgb(201, 122, 19);
-        font-family: "Gloria Hallelujah", cursive;
-        font-weight: 400;
-        font-style: normal;
-        text-align: center;
-        margin-bottom: 3px;
-        font-size: 30px;
-    }
-    
+        
     /*sections*/
 
 .container {
@@ -152,14 +132,14 @@ input{
     text-align: center;
 }
 
-.card .contenido p{
+ .card .contenido p{
     line-height: 1;
     color: #6a6a6a; 
     font-size: 18px;
     font-family: "Shadows Into Light", cursive;
     font-weight: 400;
     font-style: normal;    
-}
+} 
 .card .contenido h2{
 
     font-weight: 400;
@@ -211,119 +191,13 @@ input{
         width: 100%;
     }
 }
-/*gastronomia*/
-
-.gastronomia-section{
-
-    width: 100%;
-    display: flex;
-    max-width: 1300px;
-    align-items: center; 
-    object-fit: cover;
-    margin-bottom: 1%; 
-    margin-top:0;
-}
-
-.cards{
-    width: 100%;
-    margin: 1px;
-    border-radius: 6px;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-    cursor: default;
-    transition: all 400ms ease;
-}
-
-.cards:hover:hover{
-    box-shadow:  5px 5px 20px rgba(0,0,0,0.4);
-    transform: translateY(4%);
-    
-}
-
-.cards img{
-    width: 100%;
-    height: 320px;
-    object-fit: cover;
-}
-
-.cards .contenido{
-    padding: 2px;
-    text-align: center;
-}
-
-.cards .contenido, p{
-    
-    color: #6a6a6a;
-    font-family: "Shadows Into Light", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.cards .contenido h2{
-    
-    margin-bottom: 2px;
-    margin-top: 1%;
-    font-size: 24px;
-    padding: 8%;
-    font-weight: bold;  
-}
-
-.cards .contenido a{
-    text-decoration: none;
-    display: inline-block;
-    padding: 6px;
-    margin-top: 3px;
-    color: #2fb4cc;
-    border: 1px  solid #2fb4cc;
-    border-radius: 4px;
-    transition: all 400ms ease;
-}
-
-.cards .contenido a:hover{
-    background: #2fb4cc;
-    color: #fff;
-}
-
-/*alojamiento*/
-
-.alojamiento-section{
-
-    width: 100%;
-    display: flex;
-    max-width: 1300px;
-    align-items: center; 
-    object-fit: cover;
-    margin-bottom: 3%;
-}
-
-/*sitios*/
-
-.sitios-section{
-
-    width: 100%;
-    display: flex;
-    max-width: 1300px;
-    align-items: center; 
-    object-fit: cover;
-    margin-bottom: 3%;
-}
-
-body{
-
-    background-color: #d2e0d923;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
 
 /*estilos del footer*/
 
 .footer {
     width: 100%;
-   /* height: 20%;*/
     background-color: #242323;
- /*   margin-top: 5%;  */ 
+ 
 }
 
 .footer .grupo-1{
