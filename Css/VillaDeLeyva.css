@@ -185,12 +185,13 @@ input{
     font-family: "Shadows Into Light", cursive;
     font-weight: 400;
     font-style: normal;    
-}
+} 
+
 .card .contenido h2{
 
     font-weight: 400;
     margin-bottom: 5px;
-    font-size: 10px;
+    font-size: 30px;
     font-weight: bold;
     font-family: "Gloria Hallelujah", cursive;
     font-style: normal;
@@ -206,6 +207,7 @@ input{
     border: 1px  solid #2fb4cc;
     border-radius: 4px;
     transition: all 400ms ease;
+    font-family: "Gloria Hallelujah", cursive;
 }
 
 .card .contenido a:hover{
@@ -280,10 +282,10 @@ input{
     text-align: center;
 }
 
-.cards .contenido, p{
+.cards .contenido p{
     
     color: #6a6a6a;
-    font-family: "Shadows Into Light", cursive;
+    font-family: "Gloria Hallelujah", cursive;
     font-weight: 400;
     font-style: normal;
 }
@@ -292,7 +294,7 @@ input{
     
     margin-bottom: 2px;
     margin-top: 1%;
-    font-size: 24px;
+    font-size: 30px;
     padding: 8%;
     font-weight: bold;  
 }
@@ -306,6 +308,7 @@ input{
     border: 1px  solid #2fb4cc;
     border-radius: 4px;
     transition: all 400ms ease;
+    font-family: "Gloria Hallelujah", cursive;
 }
 
 .cards .contenido a:hover{
