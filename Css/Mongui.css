@@ -1,0 +1,435 @@
+/*resert de estilos de navegador elimina todo lo que por defecto trae las paginas*/
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/*estilo boton home logo*/
+.header{
+    background-color:#f7fcfc ;
+}
+.nav img{
+    width: 110px;
+    height: 110px;
+    margin-left: 150px;
+}
+
+/*estilos de barra de busqueda*/
+
+.search{
+    position: absolute;
+    left: 25%;
+    top: 6%;
+    padding: 6px;
+
+}
+
+input{
+    outline: none ;
+    box-sizing: border-box;
+    height: 28px ;
+    width: 600px;
+    padding: 0px 8px;
+    color: #000;
+    border-radius: 50px;
+    font-size: 15px;
+    border: 1px solid #c5c7c9;
+    text-align: left;
+    background: white;
+    font-family:"Gloria Hallelujah" ;
+}
+
+ .btn {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    background: black; 
+ }
+
+ .btn i{
+    font-size: 20px;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+ }
+
+ /*carrousel*/
+
+.slider-box {
+    position: relative;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.slider{
+    display: flex;
+    aspect-ratio: 16 / 9; /*definir como se va a ver la imagen*/
+    overflow-x: hidden; /*parte de la imagen que salga de contenedor se oculte*/
+    scroll-snap-type: x mandatory; /*establecer como se desplaza la imagen*/
+    scroll-behavior: smooth; /*como sera el movimiento en la transicion*/
+    box-shadow: 0 .25rem 5rem #21212126;
+    border-radius: .7rem;
+    width: 1340px;
+    height: 360px;
+}
+
+.slider img{
+    flex: 1 0 100%; /*cuanto va a crecer cuando tenga un espacio a uno -que tan pequeño-tamañoelemento*/
+    scroll-snap-align: start;/*que se posicione sobre primer elemento del scroll*/
+    object-fit: cover;
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%; /*boton centrado*/
+    transform: translateX(-50%);
+    z-index: 1; /*establecer botones una carta antes de la imagen*/
+}
+
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: .75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover{
+    opacity: 1;
+}
+/*section text-section*/
+
+.text-section h1{
+    color:rgb(201, 122, 19);
+    font-size: 60PX;
+    text-align: center;
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.text-section, p{
+        margin-bottom: 2px;
+        margin-top: 0;
+        font-size: 18PX;
+        text-align: center;  
+        color: rgb(65, 63, 63);
+        font-family: "Gloria Hallelujah", cursive;
+        font-weight: 300;
+        font-style: normal;  
+    }
+    
+.text-section h3 {
+        color: rgb(201, 122, 19);
+        font-family: "Gloria Hallelujah", cursive;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        margin-bottom: 3px;
+        font-size: 30px;
+    }
+    
+    /*sections*/
+
+.container {
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    align-items: center; 
+    object-fit: cover;
+    padding: 40px;   
+    margin: 0 auto;
+}
+
+.card{
+    width: 100%;
+    margin: 5px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover{
+    box-shadow:  5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);   
+}
+
+.card img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.card .contenido{
+    padding: 10px;
+    text-align: center;
+}
+
+.card .contenido p{
+    line-height: 1;
+    color: #6a6a6a; 
+    font-size: 18px;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;    
+}
+.card .contenido h2{
+
+    font-weight: 400;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Gloria Hallelujah", cursive;
+    font-style: normal;
+    color: black;
+}
+
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 6px;
+    margin-top: 5%;
+    color: #2fb4cc;
+    border: 1px  solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.card .contenido a:hover{
+    background: #2fb4cc;
+    color: #fff;
+}
+
+.option h2{
+    font-size: 45px;
+    padding: 50px;
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(201, 122, 19);
+}
+
+.option h4{
+    font-size: 25px;
+    padding: 20px;
+    font-family: "Gloria Hallelujah", cursive;
+    font-style: normal;
+    color: black;
+    font-weight: bold;
+}
+
+@media(max-width:768px)
+{
+    .card{
+        width: 100%;
+    }
+}
+/*gastronomia*/
+
+.gastronomia-section{
+
+    width: 100%;
+    display: flex;
+    max-width: 1300px;
+    align-items: center; 
+    object-fit: cover;
+    margin-bottom: 1%; 
+    margin-top:0;
+    margin: 0 auto;
+
+}
+
+.cards{
+    width: 100%;
+    margin: 1px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.cards:hover:hover{
+    box-shadow:  5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(4%);
+    
+}
+
+.cards img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.cards .contenido{
+    padding: 2px;
+    text-align: center;
+}
+
+.cards .contenido, p{
+    
+    color: #6a6a6a;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cards .contenido h2{
+    
+    margin-bottom: 2px;
+    margin-top: 1%;
+    font-size: 24px;
+    padding: 8%;
+    font-weight: bold;  
+}
+
+.cards .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 6px;
+    margin-top: 3px;
+    color: #2fb4cc;
+    border: 1px  solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.cards .contenido a:hover{
+    background: #2fb4cc;
+    color: #fff;
+}
+
+/*alojamiento*/
+
+.alojamiento-section{
+
+    width: 100%;
+    display: flex;
+    max-width: 1300px;
+    align-items: center; 
+    object-fit: cover;
+    margin-bottom: 3%;
+    margin: 0 auto;
+}
+
+/*sitios*/
+
+.sitios-section{
+
+    width: 100%;
+    display: flex;
+    max-width: 1300px;
+    align-items: center; 
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+body{
+
+    background-color: #d2e0d923;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*estilos del footer*/
+
+.footer {
+    width: 100%;
+    background-color: #242323;
+    margin-top: 5%; 
+}
+
+.footer .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 5px 0px
+}
+
+.footer .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .grupo-1 .box figure img {
+    width: 180px;
+}
+
+.footer .grupo-1 .box h2{
+    color: white;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-family: "Gloria Hallelujah", cursive;
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer .grupo-1 .box p{
+    color:#efefef;
+    margin-bottom: 5px;
+    font-family: "Gloria Hallelujah", cursive ;
+    font-size: 16px;
+}
+
+.footer  .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 50px;
+    color: #fff;
+    margin-right: 10%;
+    background-color: #191c1f;
+    transition: all 300ms ease;
+    text-align: center; 
+
+}
+
+.footer .grupo-1 .red-social a:hover{
+    color: rgb(120, 236, 105);
+}
+
+.footer .grupo-2{
+    background-color: #353636;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer .grupo-2 small{
+    font-size: 15px;
+}
+
+/*footer responsivo*/
+@media (max-width: 800px) {
+    .footer .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+        padding: 15px 0px;  
+        height: 50%;
+}    
+}
