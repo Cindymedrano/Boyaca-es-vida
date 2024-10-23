@@ -2,33 +2,47 @@
     "recomendadosTuristicos":[
 {
     "nombre":"Villa de Leyva",
-    "imagen": "Imagenes/Villadeleyva/PanoramicaLeyva.jpg"
+    "imagen": "Imagenes/PaginaPrincipal/PlazaVilladeLeyva2.jpg",
+    "descripción": "Disfruta de los mejores paisajes y diferentes planes en Villa de Leyva.",
+    "urlPueblo":"VillaDeLeyva.html"
    
 },
 {
     "nombre":"Paipa",
-    "imagen": "Imagenes/Paipa/Paipa.jpg"
+    "imagen": "Imagenes/Paipa/Paipa.jpg",
+    "descripción": "Te gustan los amasijos?...Ven y disfruta de los mejores en Paipa.",
+    "urlPueblo":"Paipa.html"
     
 },
 {
     "nombre":"Raquira",
-      "imagen": "Imagenes/Paipa/Paipa.jpg"
+      "imagen":"Imagenes/PaginaPrincipal/raquirapaginaprincipal.jpg",
+      "descripción":"Reconocido por sus coloridas calles y artesanías en barro.",
+       "urlPueblo":"Raquira.html"
+      
     
 },
 {
     "nombre": "Tunja",
-    "imagen": "Imagenes/PaginaPrincipal/Tunja2.jpg"
+    "imagen": "Imagenes/PaginaPrincipal/PlazaTunja.jpg",
+    "descripción":"También llamada la cuna de la independencia, ciudad con mucha historia y cultura.",
+     "urlPueblo":"Tunja.html"
 },
 {
     "nombre": "Mongui",
-    "imagen": "Imagenes/Mongui/Mongui.jpg"
+    "imagen": "Imagenes/PaginaPrincipal/monguiprin.jpg",
+    "descripción":"Considerado uno de los pueblos más lindos de Boyacá.",
+     "urlPueblo":"Mongui.html"
 },
 {
      "nombre": "El cocuy",
-     "imagen": "Imagenes/Elcocuy/cocuyprinc.jpg"
-     
+     "imagen": "Imagenes/PaginaPrincipal/cocuyprinc.jpg",
+     "descripción":"Si te gusta caminar y conocer lugares inolvidables, el Cocuy debes conocer.",
+     "urlPueblo":"Cocuy.html"
 }
         
     ]
 }
+
+
 

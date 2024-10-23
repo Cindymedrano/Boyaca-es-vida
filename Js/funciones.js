@@ -90,3 +90,73 @@ function visualizarFooter(){
 
 
 }   */
+        let recomendadosTuristicos =
+            [
+                {
+                    "nombre":"Villa de Leyva",
+                    "imagen": "Imagenes/PaginaPrincipal/PlazaVilladeLeyva2.jpg",
+                    "descripción": "Disfruta de los mejores paisajes y diferentes planes en Villa de Leyva.",
+                    "urlPueblo":"VillaDeLeyva.html"
+                   
+                },
+                {
+                    "nombre":"Paipa",
+                    "imagen": "Imagenes/Paipa/Paipa.jpg",
+                    "descripción": "Te gustan los amasijos?...Ven y disfruta de los mejores en Paipa.",
+                    "urlPueblo":"Paipa.html"
+                    
+                },
+                {
+                    "nombre":"Raquira",
+                      "imagen":"Imagenes/PaginaPrincipal/raquirapaginaprincipal.jpg",
+                      "descripción":"Reconocido por sus coloridas calles y artesanías en barro.",
+                       "urlPueblo":"Raquira.html"
+                      
+                    
+                },
+                {
+                    "nombre": "Tunja",
+                    "imagen": "Imagenes/PaginaPrincipal/PlazaTunja.jpg",
+                    "descripción":"También llamada la cuna de la independencia, ciudad con mucha historia y cultura.",
+                     "urlPueblo":"Tunja.html"
+                },
+                {
+                    "nombre": "Mongui",
+                    "imagen": "Imagenes/PaginaPrincipal/monguiprin.jpg",
+                    "descripción":"Considerado uno de los pueblos más lindos de Boyacá.",
+                     "urlPueblo":"Mongui.html"
+                },
+                {
+                     "nombre": "El cocuy",
+                     "imagen": "Imagenes/PaginaPrincipal/cocuyprinc.jpg",
+                     "descripción":"Si te gusta caminar y conocer lugares inolvidables, el Cocuy debes conocer.",
+                     "urlPueblo":"Cocuy.html"
+                }
+];
+
+                    console.log(recomendadosTuristicos [0].descripción);
+
+                    console.log(recomendadosTuristicos [3].nombre);
+
+
+                    //ciclos  forEach-nos sale en la consola la informacion del Json para poderlo recorrer//
+                    recomendadosTuristicos.forEach(function(recomendados){
+                    console.log(recomendados.descripción);
+
+                    // o se puede usar asi cuando queremos toda la informacion  *console.log(recomendados);*//
+
+                    });
+
+                    //Ciclos for//
+                    for(contador=0;contador<recomendadosTuristicos.length;contador++) {
+                        console.log(recomendadosTuristicos[contador]);
+                    }
+                    /*   //cuando quiero buscar por algo detallado
+                    for(contador=0;contador<recomendadosTuristicos.length;contador++) {
+                        console.log(recomendadosTuristicos[contador]descripción); 
+                    }*/
+
+                    /* //cuando quiero una posicion especifica
+                    for(contador=0;contador<2;contador++) {
+                        console.log(recomendadosTuristicos[contador]);
+                    } */

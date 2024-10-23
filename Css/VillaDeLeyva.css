@@ -8,12 +8,29 @@
 /*estilo boton home logo*/
 .header{
     background-color:#f7fcfc ;
+    display: flex;
+    max-width: 1100%;
+ 
 }
 .nav img{
     width: 110px;
     height: 110px;
-    margin-left: 150px;
+    margin-left: 130px;
+    display: flex;
 }
+
+@media(max-width:768px) {
+
+
+    .nav img{
+        width: 85px;
+        height:85px;
+        align-items: left;
+        margin-top: 25px;
+        margin-left: 5px;
+    }
+}
+
 
 /*estilos de barra de busqueda*/
 
@@ -22,6 +39,9 @@
     left: 25%;
     top: 6%;
     padding: 6px;
+    display: flex;
+    max-width: 1100px;
+
 
 }
 
@@ -38,6 +58,7 @@ input{
     text-align: left;
     background: white;
     font-family:"Gloria Hallelujah" ;
+    display: flex;
 }
 
  .btn{
@@ -59,6 +80,31 @@ input{
     text-align: center;
  }
 
+
+ @media(max-width:768px) {
+
+    .search{
+        height:50px;
+        align-items: center;
+        margin-top: 0%;
+        width: 340px;
+    }
+
+    }
+    .btn{
+        margin-top: 5px;
+        width: 35px;
+        height: 35px;
+       
+    }
+    .btn i{
+        text-align: center;
+        font-size: 18px;
+        margin-top: 0%;  
+        
+    }
+
+
  /*carrousel*/
 
 .slider-box {
@@ -69,7 +115,6 @@ input{
 
 .slider{
     display: flex;
-    aspect-ratio: 16 / 9; /*definir como se va a ver la imagen*/
     overflow-x: hidden; /*parte de la imagen que salga de contenedor se oculte*/
     scroll-snap-type: x mandatory; /*establecer como se desplaza la imagen*/
     scroll-behavior: smooth; /*como sera el movimiento en la transicion*/
@@ -107,6 +152,17 @@ input{
 .slider-nav a:hover{
     opacity: 1;
 }
+
+@media(max-width:768px) {
+
+    .slider{
+        width: auto;
+        height:200px;
+        border-radius:0.5rem ;
+    }  
+}
+
+
 /*section text-section*/
 
 .text-section h1{
@@ -117,7 +173,7 @@ input{
     font-weight: 400;
     font-style: normal;
     font-weight: bold;
-    margin-bottom: 2px;
+    
 }
 
 .text-section,p{
@@ -138,7 +194,24 @@ input{
         margin-bottom: 3px;
         font-size: 30px;
     }
-    
+    @media(max-width:768px) {
+
+        .text-section h1{
+             font-size:35px;
+        }  
+        .text-section,p{
+            font-size: 15px;  
+            margin-top: 1px; 
+            padding: 10px;
+            text-align: justify;
+        }
+        .text-section h3{
+            font-size:23px;
+            margin-bottom: 2px;
+        }
+       
+    }
+     
     /*sections*/
 
 .container {
@@ -148,12 +221,15 @@ input{
     align-items: center; 
     object-fit: cover;
     padding: 40px;   
-    margin: 0 auto;
+    margin: 20px auto;
+    
+    
 }
 
 .card{
     width: 100%;
-    margin: 5px;
+    height: 410px;
+    margin: 8px;
     border-radius: 6px;
     overflow: hidden;
     background: #fff;
@@ -171,17 +247,20 @@ input{
     width: 100%;
     height: 230px;
     object-fit: cover;
+    display: block;
+    border-radius: 5px;
 }
 
 .card .contenido{
-    padding: 10px;
+    padding: 20px 15px;
     text-align: center;
+    flex-grow: 1;
 }
 
 .card .contenido p{
     line-height: 1;
     color: #6a6a6a; 
-    font-size: 18px;
+    font-size: 17px;
     font-family: "Shadows Into Light", cursive;
     font-weight: 400;
     font-style: normal;    
@@ -201,13 +280,15 @@ input{
 .card .contenido a{
     text-decoration: none;
     display: inline-block;
-    padding: 6px;
+    padding: 3px;
     margin-top: 5%;
     color: #2fb4cc;
     border: 1px  solid #2fb4cc;
     border-radius: 4px;
     transition: all 400ms ease;
     font-family: "Gloria Hallelujah", cursive;
+    margin-bottom: 10px;
+   
 }
 
 .card .contenido a:hover{
@@ -233,11 +314,42 @@ input{
     font-weight: bold;
 }
 
-@media(max-width:768px)
-{
-    .card{
-        width: 100%;
+@media(max-width:768px){
+
+    .container{
+        flex-wrap: wrap;
+        width: 90%;
+        height: auto;
+        flex-grow: 1;
+        
     }
+
+
+    .card img{
+        height: 180px;
+    }
+
+    .card .contenido p{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .card .contenido h2{
+        font-size: 19px;
+        text-align: center;
+        line-height: 0.9;     
+}
+    .option h2{
+        font-size: 23px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .card .contenido a{
+        font-size: 13px;
+        padding: 0;
+
+}
 }
 /*gastronomia*/
 
@@ -251,11 +363,14 @@ input{
     margin-bottom: 1%; 
     margin-top:0;
     margin: 0 auto;
-
+    justify-content: space-between;
+    gap: 8px;
+    
 }
 
 .cards{
     width: 100%;
+    height: 635px;
     margin: 1px;
     border-radius: 6px;
     overflow: hidden;
@@ -263,6 +378,7 @@ input{
     box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
     cursor: default;
     transition: all 400ms ease;
+    
 }
 
 .cards:hover:hover{
@@ -275,11 +391,14 @@ input{
     width: 100%;
     height: 320px;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 .cards .contenido{
     padding: 2px;
     text-align: center;
+    flex-grow: 1;
+
 }
 
 .cards .contenido p{
@@ -302,18 +421,62 @@ input{
 .cards .contenido a{
     text-decoration: none;
     display: inline-block;
-    padding: 6px;
-    margin-top: 3px;
+    padding: 5px;
+    margin-top: 2px;
     color: #2fb4cc;
     border: 1px  solid #2fb4cc;
     border-radius: 4px;
     transition: all 400ms ease;
     font-family: "Gloria Hallelujah", cursive;
+        
 }
 
 .cards .contenido a:hover{
     background: #2fb4cc;
     color: #fff;
+}
+
+@media(max-width:768px){
+
+    .gastronomia-section{
+        flex-wrap: wrap;
+    }
+    .cards{
+        width: 80%;
+        height: 360px;
+        margin: 0 auto;
+        
+    }
+
+
+    .cards img{
+        height: 140px;
+    }
+
+    .cards .contenido p{
+        font-size: 15px;
+        text-align:center;
+    }
+
+    .cards .contenido h4{
+        font-size: 18px;
+        text-align: center;
+        line-height: 0.9; 
+            
+}
+
+    .cards .contenido a{
+        font-size: 13px;
+        padding: 1%;
+        margin-bottom: 2px;
+        margin-top: 1px;    
+}
+    .alojamiento-section{
+    flex-wrap: wrap;
+}
+    .sitios-section{
+        flex-wrap: wrap;
+    }
 }
 
 /*alojamiento*/
@@ -327,6 +490,8 @@ input{
     object-fit: cover;
     margin-bottom: 3%;
     margin: 0 auto;
+    justify-content: space-between;
+    gap: 8px;
 }
 
 /*sitios*/
@@ -339,6 +504,8 @@ input{
     align-items: center; 
     object-fit: cover;
     margin: 0 auto;
+    justify-content: space-between;
+    gap: 8px;
 }
 
 body{
@@ -360,11 +527,10 @@ body{
 .footer .grupo-1{
     width: 100%;
     max-width: 1200px;
-    margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
-    padding: 5px 0px
+    grid-gap: 20px;
+    padding: 3px 0px
 }
 
 .footer .grupo-1 .box figure{
@@ -376,12 +542,11 @@ body{
 }
 
 .footer .grupo-1 .box figure img {
-    width: 180px;
+    width: 170px;
 }
 
 .footer .grupo-1 .box h2{
     color: white;
-    margin-bottom: 5px;
     font-size: 20px;
     font-family: "Gloria Hallelujah", cursive;
     text-align: center;
@@ -390,7 +555,6 @@ body{
 
 .footer .grupo-1 .box p{
     color:#efefef;
-    margin-bottom: 5px;
     font-family: "Gloria Hallelujah", cursive ;
     font-size: 16px;
 }
@@ -400,7 +564,7 @@ body{
     text-decoration: none;
     width: 45px;
     height: 45px;
-    line-height: 50px;
+    line-height: 45px;
     color: #fff;
     margin-right: 10%;
     background-color: #191c1f;
@@ -408,10 +572,16 @@ body{
     text-align: center; 
 }
 
+
 .footer .grupo-1 .red-social a:hover{
     color: rgb(120, 236, 105);
 }
 
+.footer .grupo-1 .red-social .fa{
+    margin: 70px;
+    margin-top: 20px;
+    
+}
 .footer .grupo-2{
     background-color: #353636;
     padding: 15px 10px;
@@ -424,12 +594,36 @@ body{
 }
 
 /*footer responsivo*/
-@media (max-width: 800px) {
+@media(max-width: 768px) {
+
+   
     .footer .grupo-1{
-        width: 90%;
+        width: 100%;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 15px;
-        padding: 15px 0px;  
-        height: 50%;
-}    
-}
+        text-align: justify;
+        align-items: center
+     }    
+     .footer .grupo-1 .box figure img{
+        width: 40%;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 0%;
+     }
+     .footer .grupo-1 .box h2{
+        font-size: 16px;
+        text-align: center;
+     }
+     .footer .grupo-1 .box p{
+        font-size: 16px;
+        text-align: justify; 
+     }
+     .footer  .grupo-1 .red-social .fa{
+        margin: 10px;
+        margin-left:50px;   
+     }
+  
+     .footer .grupo-2 small{
+        font-size: 16px;
+     }
+
+    }
