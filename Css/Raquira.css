@@ -317,6 +317,14 @@ input{
     color: #fff;
 }
 
+@media (max-width: 800px) {
+    .cards .contenido{
+        padding: 10px; 
+    }
+    
+    
+}
+
 /*alojamiento*/
 
 .alojamiento-section{
