@@ -1,10 +1,21 @@
 function buscar() {
-   
+
     let busqueda = document.getElementById("busquedaPueblos").value;
 
+    //lista de pueblos//
+    const opciones = ["raquira", "RAQUIRA","paipa","PAIPA","villa de leyva", "VILLA DE LEYVA","mongui", "MONGUI","tunja", "TUNJA","cocuy", "COCUY"];
 
+
+    //Para que salga una alerta cuando se busca y no se escribe nada//
+    
     if (busqueda == "") {
-        alert("el valor de busqueda no puede estar vacio");
+    alert("el valor de busqueda no puede estar vacio");
+}
+
+    //Para que salga alerta cuando el nombre del municipio no se encuentra en la constante opciones//
+    
+    else if (!opciones.includes(busqueda)){
+        alert("Lo sentimos aun no tenemos información de este municipio:" + busqueda);
     }
 
     else if (busqueda == "raquira") {
@@ -52,44 +63,10 @@ function buscar() {
         window.location.href = "../Cocuy.html";
     }
 
-    
+
+
 }
 
-
-
-
- /* //visualizarFooter();//se llama la funciòn al cargar el archivo
-function visualizarFooter(){
-    let seccionFooter= document.getElementById("footer");
-    seccionFooter.innerHTML= `
-    <div class="grupo-1">
-                <div class="box">
-                    <figure>
-                        <img src="Imagenes/PaginaPrincipal/Logo.png" alt="logo boyaca es vida">
-                    </figure>
-                </div>
-                <div class="box">
-                    <h2> SOBRE NOSOTROS</h2>
-                    <p>Boyacá es vida nace de la admiración por la belleza natural, historia y rica cultura que posee
-                        éste
-                        departamento. </p>
-                    <p>Nuestra misión es que descubras la esencia de Boyacá con nosotros. </p>
-                </div>
-                <div class="box">
-                    <h2> SIGUENOS</h2>
-                    <div class="red-social">
-                        <a href="https://www.instagram.com/boyacaesvida/" class="fa fa-instagram" target="_blank"></a>
-                        <a href="https://www.facebook.com/profile.php?id=61567079648836&mibextid=rS40aB7S9Ucbxw6v"
-                            class="fa fa-facebook" target="_blank"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="grupo-2">
-                <small>&copy; 2024 <b>Boyacá es vida</b> - Todos los derechos reservados.</small>
-            </div> `;
-
-
-}   */
         let recomendadosTuristicos =
             [
                 {
@@ -160,3 +137,44 @@ function visualizarFooter(){
                     for(contador=0;contador<2;contador++) {
                         console.log(recomendadosTuristicos[contador]);
                     } */
+
+
+
+
+
+
+                        
+                         /* //visualizarFooter();//se llama la funciòn al cargar el archivo
+function visualizarFooter(){
+    let seccionFooter= document.getElementById("footer");
+    seccionFooter.innerHTML= `
+    <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <img src="Imagenes/PaginaPrincipal/Logo.png" alt="logo boyaca es vida">
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2> SOBRE NOSOTROS</h2>
+                    <p>Boyacá es vida nace de la admiración por la belleza natural, historia y rica cultura que posee
+                        éste
+                        departamento. </p>
+                    <p>Nuestra misión es que descubras la esencia de Boyacá con nosotros. </p>
+                </div>
+                <div class="box">
+                    <h2> SIGUENOS</h2>
+                    <div class="red-social">
+                        <a href="https://www.instagram.com/boyacaesvida/" class="fa fa-instagram" target="_blank"></a>
+                        <a href="https://www.facebook.com/profile.php?id=61567079648836&mibextid=rS40aB7S9Ucbxw6v"
+                            class="fa fa-facebook" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small>&copy; 2024 <b>Boyacá es vida</b> - Todos los derechos reservados.</small>
+            </div> `;
+
+
+}   */
+
+            
