@@ -23,10 +23,11 @@
         </div>
 
         <div class="search">
-            <input type="text" id="busquedaPueblos" placeholder="Que municipio de Boyacá quieres buscar?">
+            <input type="text" id="busquedaPueblos"  placeholder="Que municipio o sitio turístico de Boyacá quieres buscar?"
+            onkeyup = "if(event.keyCode == 13) buscar()">
             <div class="btn" onclick="buscar()">
-                <i class="fa fa-search"></i>
-            </div>
+            <i class="fa fa-search"></i>
+            
         </div>
 
 
@@ -36,9 +37,9 @@
         <section class="box">
             <div class="slider-box">
                 <div class="slider">
-                    <img id="slider1" src="Imagenes/Tunja/opciones/carrusel-1.jpg">
+                    <img id="slider1" src="Imagenes/Tunja/opciones/sitiosTunja.jpg">
                     <img id="slider2" src="Imagenes/Tunja/opciones/tunja2.jpg">
-                    <img id="slider3" src="Imagenes/Tunja/opciones/sitiosTunja.jpg">
+                    <img id="slider3" src="Imagenes/Tunja/opciones/carrusel-1.jpg">
                 </div>
                 <div class="slider-nav">
                     <a href="#slider1"></a>

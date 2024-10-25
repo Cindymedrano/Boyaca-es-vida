@@ -1,34 +1,68 @@
 /*resert de estilos de navegador elimina todo lo que por defecto trae las paginas*/
-*{
-    margin: 0; 
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    /*el ancho y alto se calculaincluyendo borde y relleno*/
+
 }
+
 /*estilo boton home logo*/
-.header{
-    background-color:#f7fcfc ;
+.header {
+    background-color: #f7fcfc;
+    /*color del fondo*/
+    display: flex;
+    /*usa flexbox para alinear elementos*/
+    max-width: 1100px;
+
 }
-.nav img{
+
+.nav img {
     width: 110px;
     height: 110px;
-    margin-left: 150px;
+    margin-left: 130px;
+    /*margen izquierda*/
+    display: flex;
+    /*usa flexbox para alinear elementos*/
+}
+
+/*aplicar estilos especificos cuando el ancho de la pantalla es menor o = 768px*/
+@media(max-width:768px) {
+
+    .nav img {
+        width: 85px;
+        height: 85px;
+        align-items: left;
+        /*coloca el logo a  izquierda*/
+        margin-top: 25px;
+        /*margen superior*/
+        margin-left: 5px;
+        /*margen a la izquierda*/
+    }
 }
 
 /*estilos de barra de busqueda*/
 
-.search{
+.search {
     position: absolute;
+    /*crear elemntos que se posicionen en relacion con su padre*/
     left: 25%;
+    /*posicion horizontal en relacion con su padre*/
     top: 6%;
+    /*posicion vertical en relacion con su padre*/
     padding: 6px;
-
+    display: flex;
+    /*usa flexbox para alinear elementos*/
+    max-width: 1100px;
+    /*ancho maximo que puede tener un elemento*/
 }
 
-input{
-    outline: none ;
+input {
+    outline: none;
+    /*eelimina contorno de un elemento*/
     box-sizing: border-box;
-    height: 28px ;
+    /* calcula ancho y alto incluyendo borde y relleno*/
+    height: 28px;
     width: 600px;
     padding: 0px 8px;
     color: #000;
@@ -37,10 +71,12 @@ input{
     border: 1px solid #c5c7c9;
     text-align: left;
     background: white;
-    font-family:"Gloria Hallelujah" ;
+    font-family: "Gloria Hallelujah";
+    display: flex;
+    /*usa flexbox para alinear elementos*/
 }
 
- .btn{
+.btn {
     position: absolute;
     right: 0px;
     top: 0;
@@ -49,17 +85,45 @@ input{
     border-radius: 50%;
     text-align: center;
     cursor: pointer;
-    background: black; 
- }
+    background: black;
+}
 
- .btn i{
+.btn i {
     font-size: 20px;
     color: white;
     line-height: 40px;
     text-align: center;
- }
+}
 
- /*carrousel*/
+/*aplicar estilos especificos cuando el ancho de la pantalla es menor o = 768px*/
+@media(max-width:768px) {
+
+.search {
+        height: 50px;
+        align-items: center;
+        margin-top: 0%;
+        width: 225px;
+}
+
+}
+
+.btn {
+    margin-top: 5px;
+    width: 35px;
+    height: 35px;
+
+}
+
+.btn i {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 0%;
+    /*margen superior*/
+
+}
+
+
+/*estilos del carousel*/
 
 .slider-box {
     position: relative;
@@ -67,155 +131,221 @@ input{
     margin: 0 auto;
 }
 
-.slider{
+.slider {
     display: flex;
-    aspect-ratio: 16 / 9; /*definir como se va a ver la imagen*/
-    overflow-x: hidden; /*parte de la imagen que salga de contenedor se oculte*/
-    scroll-snap-type: x mandatory; /*establecer como se desplaza la imagen*/
-    scroll-behavior: smooth; /*como sera el movimiento en la transicion*/
+    /*usa flexbox para alinear elementos*/
+    overflow-x: hidden;
+    /*parte de la imagen que salga de contenedor se oculte*/
+    scroll-snap-type: x mandatory;
+    /*establecer como se desplaza la imagen*/
+    scroll-behavior: smooth;
+    /*como sera el movimiento en la transicion*/
     box-shadow: 0 .25rem 5rem #21212126;
     border-radius: .7rem;
-    width: 1340px;
+    width: auto;
     height: 360px;
 }
 
-.slider img{
-    flex: 1 0 100%; /*cuanto va a crecer cuando tenga un espacio a uno -que tan pequeño-tamañoelemento*/
-    scroll-snap-align: start;/*que se posicione sobre primer elemento del scroll*/
-    object-fit: cover;
+.slider img {
+    flex: 1 0 100%;
+    /*cuanto va a crecer cuando tenga un espacio a uno -que tan pequeño-tamañoelemento*/
+    scroll-snap-align: start;
+    /*que se posicione sobre primer elemento del scroll*/
+    object-fit: unset;
+    /*controla comportamiento de elemento cuando contenido supera su tamaño*/
 }
 
-.slider-nav{
+.slider-nav {
     display: flex;
+    /*usa flexbox para alinear elementos*/
     column-gap: 1rem;
+    /*establece el espacio entre columnas*/
     position: absolute;
+    /*para crear elementos que se posicion en relacion con su padre*/
     bottom: 1.25rem;
-    left: 50%; /*boton centrado*/
+    /*posicionar elementos en parte inferior del padre*/
+    left: 50%;
+    /*boton centrado*/
     transform: translateX(-50%);
-    z-index: 1; /*establecer botones una carta antes de la imagen*/
+    /*desplazar elemento de forma horizontal*/
+    z-index: 1;
+    /*establecer botones una carta antes de la imagen*/
 }
 
-.slider-nav a{
+.slider-nav a {
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50%;
     background-color: #fff;
     opacity: .75;
     transition: opacity ease 250ms;
+    /*transicion suave para opacidad de un elemento*/
 }
 
-.slider-nav a:hover{
+.slider-nav a:hover {
     opacity: 1;
+    /*elemento completamente opaca*/
 }
-/*section text-section*/
 
-.text-section h1{
-    color:rgb(201, 122, 19);
+/*aplicar estilos especificos cuando el ancho de la pantalla es menor o = 768px*/
+@media(max-width:768px) {
+
+    .slider {
+        width: auto;
+        height: 200px;
+        border-radius: 0.5rem;
+    }
+}
+
+
+/*estilos de section text-section*/
+
+.text-section h1 {
+    color: rgb(201, 122, 19);
     font-size: 60PX;
     text-align: center;
     font-family: "Gloria Hallelujah", cursive;
     font-weight: 400;
     font-style: normal;
     font-weight: bold;
-    margin-bottom: 2px;
+
 }
 
-.text-section,p{
-        font-size: 18PX;
-        text-align: center;  
-        color: rgb(65, 63, 63);
-        font-family: "Gloria Hallelujah", cursive;
-        font-weight: 300;
-        font-style: normal;  
-    }
-    
+.text-section,
+p {
+    font-size: 18PX;
+    text-align: center;
+    color: rgb(65, 63, 63);
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 300;
+    font-style: normal;
+}
+
 .text-section h3 {
-        color: rgb(201, 122, 19);
-        font-family: "Gloria Hallelujah", cursive;
-        font-weight: 400;
-        font-style: normal;
-        text-align: center;
-        margin-bottom: 3px;
-        font-size: 30px;
+    color: rgb(201, 122, 19);
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 3px;
+    font-size: 30px;
+}
+
+@media(max-width:768px) {
+
+    .text-section h1 {
+        font-size: 35px;
     }
-    
-    /*sections*/
+
+    .text-section,
+    p {
+        font-size: 15px;
+        margin-top: 1px;
+        padding: 10px;
+        text-align: justify;
+    }
+
+    .text-section h3 {
+        font-size: 23px;
+        margin-bottom: 2px;
+    }
+
+}
+
+/*estilos de sections*/
 
 .container {
     width: 100%;
     display: flex;
+    /*usa flexbox para alinear elementos*/
     max-width: 1100px;
-    align-items: center; 
+    align-items: center;
     object-fit: cover;
-    padding: 40px;   
-    margin: 0 auto;
+    /*controla comportamiento de elemento cuando contenido supera su tamaño*/
+    padding: 40px;
+    margin: 20px auto;
 }
 
-.card{
+.card {
     width: 100%;
-    margin: 5px;
+    height: 410px;
+    margin: 8px;
     border-radius: 6px;
     overflow: hidden;
     background: #fff;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    /*agregar sombra a elemento*/
     cursor: default;
     transition: all 400ms ease;
+    /*transicion suave a todos los cambios-tiempo-velocidad*/
 }
 
-.card:hover{
-    box-shadow:  5px 5px 20px rgba(0,0,0,0.4);
-    transform: translateY(-3%);   
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    /*agregar sombra a elemento*/
+    transform: translateY(-3%);
+    /*trasladar elento en forma vertical*/
 }
 
-.card img{
+.card img {
     width: 100%;
     height: 230px;
     object-fit: cover;
+    /*ajustar tamaño de imagen dentro de contenedor*/
+    display: block;
+    /*tipo de visualizacion de elemento ocupa todo el ancho disponible*/
+    border-radius: 5px;
 }
 
-.card .contenido{
-    padding: 10px;
+.card .contenido {
+    padding: 20px 15px;
     text-align: center;
+
 }
 
-.card .contenido p{
+.card .contenido p {
     line-height: 1;
-    color: #6a6a6a; 
-    font-size: 18px;
+    color: #6a6a6a;
+    font-size: 17px;
     font-family: "Shadows Into Light", cursive;
     font-weight: 400;
-    font-style: normal;    
-} 
+    font-style: normal;
+}
 
-.card .contenido h2{
+.card .contenido h2 {
 
     font-weight: 400;
     margin-bottom: 5px;
     font-size: 30px;
     font-weight: bold;
+    /*texto en negrilla*/
     font-family: "Gloria Hallelujah", cursive;
     font-style: normal;
     color: black;
 }
 
-.card .contenido a{
+.card .contenido a {
     text-decoration: none;
     display: inline-block;
-    padding: 6px;
+    /*no ocupa toda la linea permite que otros elementos esten al lado*/
+    padding: 3px;
     margin-top: 5%;
     color: #2fb4cc;
-    border: 1px  solid #2fb4cc;
+    border: 1px solid #2fb4cc;
     border-radius: 4px;
     transition: all 400ms ease;
+    /*transicion suave a todos los cambios-tiempo-velocidad*/
     font-family: "Gloria Hallelujah", cursive;
+    margin-bottom: 10px;
+
 }
 
-.card .contenido a:hover{
+.card .contenido a:hover {
     background: #2fb4cc;
     color: #fff;
 }
 
-.option h2{
+.option h2 {
     font-size: 45px;
     padding: 50px;
     font-family: "Gloria Hallelujah", cursive;
@@ -224,129 +354,267 @@ input{
     color: rgb(201, 122, 19);
 }
 
-.option h4{
+.option h4 {
     font-size: 25px;
     padding: 20px;
     font-family: "Gloria Hallelujah", cursive;
     font-style: normal;
     color: black;
     font-weight: bold;
+    /*texto en negrita*/
 }
 
-@media(max-width:768px)
-{
-    .card{
-        width: 100%;
+/*aplicar estilos especificos cuando el ancho de la pantalla es <= 768px*/
+@media(max-width:768px) {
+
+    .container {
+        flex-wrap: wrap;
+        /*controla comportamiento elementos flexibles cuando contenido supero tamaño del contenedor*/
+        width: 90%;
+        height: auto;
+        justify-content: space-between;
+        /*distribuir elementos dentro del contenedor horizontalmente*/
+        gap: 25px;
+        /*espacio entre elementos*/
+    }
+
+    .card {
+        width: 90%;
+        height: 330px;
+        margin: 0 auto;
+    }
+
+    .card img {
+        height: 180px;
+    }
+
+    .card .contenido p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .card .contenido h2 {
+        font-size: 19px;
+        text-align: center;
+        line-height: 0.9;
+    }
+
+    .option h2 {
+        font-size: 23px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .card .contenido a {
+        font-size: 13px;
+        padding: 0;
+
     }
 }
-/*gastronomia*/
 
-.gastronomia-section{
+/*estilos seccion gastronomia*/
+
+.gastronomia-section {
 
     width: 100%;
     display: flex;
+    /*usa flexbox para alinear elementos*/
     max-width: 1300px;
-    align-items: center; 
+    align-items: center;
     object-fit: cover;
-    margin-bottom: 1%; 
-    margin-top:0;
+    margin-bottom: 1%;
+    margin-top: 0;
     margin: 0 auto;
+    justify-content: space-between;
+    /*distribuir elementos dentro del contenedor horizontalmente*/
+    gap: 8px;
+    /*espacio entre elementos*/
 
 }
 
-.cards{
+.cards {
     width: 100%;
+    height: 635px;
     margin: 1px;
     border-radius: 6px;
     overflow: hidden;
+    /*controla comportamiento de elemento cuando contenido supera su tamaño*/
     background: #fff;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    /*agregar sombra a elemento*/
     cursor: default;
+    /*cursor predeterminado*/
     transition: all 400ms ease;
+    /*transicion suave a todos los cambios-tiempo-velocidad*/
+
 }
 
-.cards:hover:hover{
-    box-shadow:  5px 5px 20px rgba(0,0,0,0.4);
+.cards:hover:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    /*agregar sombra a elemento*/
     transform: translateY(4%);
-    
+    /*trasladar elento en forma vertical*/
+
 }
 
-.cards img{
+.cards img {
     width: 100%;
     height: 320px;
     object-fit: cover;
+    /*ajustar tamaño de imagen dentro de contenedor*/
+    border-radius: 5px;
+    /*crea esquinas redondeadas*/
 }
 
-.cards .contenido{
+.cards .contenido {
     padding: 2px;
     text-align: center;
+
 }
 
-.cards .contenido p{
-    
+.cards .contenido p {
+
     color: #6a6a6a;
     font-family: "Gloria Hallelujah", cursive;
     font-weight: 400;
+    /*grosor de fuente*/
     font-style: normal;
 }
 
-.cards .contenido h2{
-    
+.cards .contenido h2 {
+
     margin-bottom: 2px;
     margin-top: 1%;
     font-size: 30px;
     padding: 8%;
-    font-weight: bold;  
+    font-weight: bold;
+    /*texto en negrita*/
 }
 
-.cards .contenido a{
+.cards .contenido a {
     text-decoration: none;
     display: inline-block;
-    padding: 6px;
-    margin-top: 3px;
+    /*no ocupa toda la linea permite que otros elementos esten al lado*/
+    padding: 5px;
+    margin-top: 2px;
     color: #2fb4cc;
-    border: 1px  solid #2fb4cc;
+    border: 1px solid #2fb4cc;
     border-radius: 4px;
     transition: all 400ms ease;
+    /*transicion suave a todos los cambios-tiempo-velocidad*/
     font-family: "Gloria Hallelujah", cursive;
+
 }
 
-.cards .contenido a:hover{
+.cards .contenido a:hover {
     background: #2fb4cc;
     color: #fff;
 }
 
-/*alojamiento*/
+/*aplicar estilos especificos cuando el ancho de la pantalla es <= 768px*/
 
-.alojamiento-section{
+@media(max-width:768px) {
+
+    .gastronomia-section {
+        flex-wrap: wrap;
+        /*permite que los elemtos se vuelven multiples lineas de ser necesarios*/
+        justify-content: space-between;
+        /*distribuir elementos dentro del contenedor horizontalmente*/
+        gap: 25px;
+        /*espacio entre elementos*/
+    }
+
+    .cards {
+        width: 60%;
+        height: 380px;
+        margin: 0 auto;
+    }
+
+    .cards img {
+        height: 140px;
+    }
+
+    .cards .contenido p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .cards .contenido h4 {
+        font-size: 18px;
+        text-align: center;
+        line-height: 0.9;
+        /*distancia vertical entre lineas de textos*/
+
+    }
+
+    .cards .contenido a {
+        font-size: 13px;
+        padding: 1%;
+        margin-bottom: 2px;
+        /*margen inferior*/
+        margin-top: 1px;
+        /*margen superior*/
+    }
+
+    .alojamiento-section {
+        flex-wrap: wrap;
+        /*permite que los elemtos se vuelven multiples lineas de ser necesarios*/
+    }
+
+    .sitios-section {
+        flex-wrap: wrap;
+        /*permite que los elemtos se vuelven multiples lineas de ser necesarios*/
+    }
+}
+
+/* estilos seccion alojamiento*/
+
+.alojamiento-section {
 
     width: 100%;
     display: flex;
+    /*usa flexbox para alinear elementos*/
     max-width: 1300px;
-    align-items: center; 
+    align-items: center;
     object-fit: cover;
+    /* ajustar imagen dentro del contenedor*/
     margin-bottom: 3%;
+    /*margen inferior*/
     margin: 0 auto;
+    /*sin margen superior inferior y navegador centre elemento horizontalmente*/
+    justify-content: space-between;
+    /*distribuir elementos dentro del contenedor horizontalmente*/
+    gap: 8px;
+    /*espacio entre elementos*/
 }
 
-/*sitios*/
+/*estilos seccion sitios*/
 
-.sitios-section{
+.sitios-section {
 
     width: 100%;
     display: flex;
+    /*usa flexbox para alinear elementos*/
     max-width: 1300px;
-    align-items: center; 
+    align-items: center;
     object-fit: cover;
+    /* ajustar imagen dentro del contenedor*/
     margin: 0 auto;
+    /*sin margen superior inferior y navegador centre elemento horizontalmente*/
+    justify-content: space-between;
+    /*distribuir elementos dentro del contenedor horizontalmente*/
+    gap: 8px;
+    /*espacio entre elementos*/
 }
 
-body{
+body {
 
     background-color: #d2e0d923;
     justify-content: center;
     align-items: center;
+    /*alinear elementos*/
     flex-wrap: wrap;
+    /*permite que los elemtos se vuelven multiples lineas de ser necesarios*/
 }
 
 /*estilos del footer*/
@@ -354,82 +622,155 @@ body{
 .footer {
     width: 100%;
     background-color: #242323;
-    margin-top: 5%; 
+    margin-top: 5%;
 }
 
-.footer .grupo-1{
+.footer .grupo-1 {
     width: 100%;
     max-width: 1200px;
-    margin: auto;
     display: grid;
+    /*crear diseño de cuadricula*/
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
-    padding: 5px 0px
+    /*se usa para repetir el numero columnas - fraccion de espacio disponible*/
+    grid-gap: 20px;
+    /*establece el espacio entre celdas de una cuadricula*/
+    padding: 3px 0px
+        /*relleno de elemento superior inferior y nada an izquierda y derecha*/
 }
 
-.footer .grupo-1 .box figure{
+.footer .grupo-1 .box figure {
     width: 100%;
     height: 100%;
     display: flex;
+    /*usa flexbox para alinear elementos*/
     justify-content: center;
+    /*alinear texto a ambos lados del elemento*/
     align-items: center;
+    /*alinea elementos al centro*/
 }
 
 .footer .grupo-1 .box figure img {
-    width: 180px;
+    width: 170px;
 }
 
-.footer .grupo-1 .box h2{
+.footer .grupo-1 .box h2 {
     color: white;
-    margin-bottom: 5px;
     font-size: 20px;
+    /*dimension de letra*/
     font-family: "Gloria Hallelujah", cursive;
     text-align: center;
+    /*alinea de texto al centro*/
     font-weight: bold;
+    /*texto en negrita*/
 }
 
-.footer .grupo-1 .box p{
-    color:#efefef;
-    margin-bottom: 5px;
-    font-family: "Gloria Hallelujah", cursive ;
+.footer .grupo-1 .box p {
+    color: #efefef;
+    font-family: "Gloria Hallelujah", cursive;
+    /*familia de fuente*/
     font-size: 16px;
+    /*dimension de letra*/
 }
 
-.footer  .grupo-1 .red-social a{
+.footer .grupo-1 .red-social a {
     display: inline-block;
+    /*no ocupa toda la linea, deja que otros elementos se muevan a su lado*/
     text-decoration: none;
+    /*no aplica decoracion subrayado*/
     width: 45px;
+    /*ancho*/
     height: 45px;
-    line-height: 50px;
+    /*alto*/
+    line-height: 45px;
+    /*distancia vertical entre lineas de textos*/
     color: #fff;
     margin-right: 10%;
+    /*margen derecha*/
     background-color: #191c1f;
+    /*color de fondo*/
     transition: all 300ms ease;
-    text-align: center; 
+    /*transicion suave a todos los cambios-tiempo-velocidad*/
+    text-align: center;
+    /*alinea elementos al centro*/
 }
 
-.footer .grupo-1 .red-social a:hover{
+
+.footer .grupo-1 .red-social a:hover {
     color: rgb(120, 236, 105);
 }
 
-.footer .grupo-2{
-    background-color: #353636;
-    padding: 15px 10px;
-    text-align: center;
-    color: #fff;
+.footer .grupo-1 .red-social .fa {
+    margin: 70px;
+    margin-top: 20px;
+    /*margen superior*/
+
 }
 
-.footer .grupo-2 small{
+.footer .grupo-2 {
+    background-color: #353636;
+    /*color de fondo*/
+    padding: 15px 10px;
+    /*espacio interior entre contenido y borde*/
+    text-align: center;
+    /*alinea elementos al centro*/
+    color: #fff;
+    /*color de letra*/
+}
+
+.footer .grupo-2 small {
     font-size: 15px;
+    /*dimension de letra*/
 }
 
 /*footer responsivo*/
-@media (max-width: 800px) {
-    .footer .grupo-1{
-        width: 90%;
+/*aplicar estilos especificos cuando el ancho de la pantalla es <= 768px*/
+@media(max-width: 768px) {
+
+
+    .footer .grupo-1 {
+        width: 100%;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 15px;
-        padding: 15px 0px;  
-        height: 50%;
-}    
+        /*se usa para definir el numero columnas (1) y tamaño de las columnas(1fr=tamaño igual)*/
+        text-align: justify;
+        /*justifica el texto en ambos lados*/
+        align-items: center
+            /*alinea elementos al centro*/
+    }
+
+    .footer .grupo-1 .box figure img {
+        width: 20%;
+        /*ancho de un  elemento*/
+        text-align: center;
+        /*el contenido se centra*/
+        align-items: center;
+        /*alinea elementos en el centro del contenedor*/
+        margin-bottom: 0%;
+        /*margen inferior*/
+    }
+
+    .footer .grupo-1 .box h2 {
+        font-size: 16px;
+        /*dimension de letra*/
+        text-align: center;
+        /*el contenido se centra de la caja*/
+    }
+
+    .footer .grupo-1 .box p {
+        font-size: 16px;
+        /*dimension de letra*/
+        text-align: justify;
+        /*el contenido se justifica*/
+    }
+
+    .footer .grupo-1 .red-social .fa {
+        margin: 10px;
+        /*margen
+        margin-left:130px; /*margen izquierda*/
+    }
+
+    .footer .grupo-2 small {
+        font-size: 16px;
+        /*dimension de letra*/
+    }
+
 }

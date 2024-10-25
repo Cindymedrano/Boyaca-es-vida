@@ -23,10 +23,11 @@
         </div>
 
         <div class="search">
-            <input type="text" id="busquedaPueblos" placeholder="Que municipio de Boyacá quieres buscar?">
+            <input type="text" id="busquedaPueblos"  placeholder="Que municipio o sitio turístico de Boyacá quieres buscar?"
+            onkeyup = "if(event.keyCode == 13) buscar()">
             <div class="btn" onclick="buscar()">
-                <i class="fa fa-search"></i>
-            </div>
+            <i class="fa fa-search"></i>
+            
         </div>
 
 

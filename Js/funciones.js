@@ -3,19 +3,20 @@ function buscar() {
     let busqueda = document.getElementById("busquedaPueblos").value;
 
     //lista de pueblos//
-    const opciones = ["raquira", "RAQUIRA","paipa","PAIPA","villa de leyva", "VILLA DE LEYVA","mongui", "MONGUI","tunja", "TUNJA","cocuy", "COCUY"];
+    const opciones = ["raquira", "RAQUIRA", "ráquira","paipa","PAIPA","villa de leyva", "VILLA DE LEYVA","mongui","monguí", "MONGUI","tunja", "TUNJA","cocuy", "COCUY",
+        "casa terracota", "CASA TERRACOTA", "pozos azules", "POZOS AZULES" , "gondava", "GONDAVA", "nevado", "nevado del cocuy", "artesano", "mano del artesano"  ];
 
 
     //Para que salga una alerta cuando se busca y no se escribe nada//
     
     if (busqueda == "") {
-    alert("el valor de busqueda no puede estar vacio");
+    alert("el valor de búsqueda no puede estar vacio");
 }
 
     //Para que salga alerta cuando el nombre del municipio no se encuentra en la constante opciones//
     
     else if (!opciones.includes(busqueda)){
-        alert("Lo sentimos aun no tenemos información de este municipio:" + busqueda);
+        alert("Lo sentimos, aún no tenemos información de este municipio:" + busqueda);
     }
 
     else if (busqueda == "raquira") {
@@ -23,6 +24,9 @@ function buscar() {
     }
 
     else if (busqueda == "RAQUIRA") {
+        window.location.href = "../Raquira.html";
+    }
+    else if (busqueda == "ráquira") {
         window.location.href = "../Raquira.html";
     }
     else if (busqueda == "paipa") {
@@ -51,6 +55,9 @@ function buscar() {
     else if (busqueda == "mongui") {
         window.location.href = "../Mongui.html";
     }
+    else if (busqueda == "monguí") {
+        window.location.href = "../Mongui.html";
+    }
 
     else if (busqueda == "MONGUI") {
         window.location.href = "../Mongui.html";
@@ -62,8 +69,38 @@ function buscar() {
     else if (busqueda == "COCUY") {
         window.location.href = "../Cocuy.html";
     }
+    else if (busqueda == "casa terracota") {
+        window.location.href = "../VillaDeLeyva.html#sitiosinteres";
+    }
+    else if (busqueda == "CASA TERRACOTA") {
+        window.location.href = "../VillaDeLeyva.html#sitiosinteres";
+    }
+    else if (busqueda == "POZOS AZULES") {
+        window.location.href = "../VillaDeLeyva.html#sitiosinteres";
+    }
+    else if (busqueda == "pozos azules") {
+        window.location.href = "../VillaDeLeyva.html#sitiosinteres";
+    }
+    else if (busqueda == "GONDAVA") {
+        window.location.href = "../VillaDeLeyva.html#sitiosinteres";
+    }
+    else if (busqueda == "gondava") {
+        window.location.href = "../VillaDeLeyva.html#sitiosinteres";
+    }
+    else if (busqueda == "nevado") {
+        window.location.href = "../Cocuy.html#sitiosinteres";
+    }
+    else if (busqueda == "nevado del cocuy") {
+        window.location.href = "../Cocuy.html#sitiosinteres";
+    }
+    else if (busqueda == "mano del artesano") {
+        window.location.href = "../Raquira.html#sitiosinteres";
+    }
+    else if (busqueda == "artesano") {
+        window.location.href = "../Raquira.html#sitiosinteres";
+    }
 
-
+   
 
 }
 

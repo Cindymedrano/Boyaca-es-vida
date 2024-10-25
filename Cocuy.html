@@ -23,10 +23,11 @@
         </div>
 
         <div class="search">
-            <input type="text" id="busquedaPueblos" placeholder="Que municipio de Boyacá quieres buscar?">
+            <input type="text" id="busquedaPueblos"  placeholder="Que municipio o sitio turístico de Boyacá quieres buscar?"
+            onkeyup = "if(event.keyCode == 13) buscar()">
             <div class="btn" onclick="buscar()">
-                <i class="fa fa-search"></i>
-            </div>
+            <i class="fa fa-search"></i>
+            
         </div>
 
 
@@ -50,8 +51,8 @@
 
         <section>
             <div class="text-section">
-                <p>
-                <h1>El Cocuy</h1> Conocido como «Ciudad Nevado, Remanso de Paz». El estilo arquitectónico del
+               
+                <h1>El Cocuy</h1>  <p>Conocido como «Ciudad Nevado, Remanso de Paz». El estilo arquitectónico del
                 casco urbano es de tipo republicano y colonial, con algunas calles empedradas, y sus viviendas conservan
                 el estilo con el que fueron construidas, con el fin de preservar, restaurar, conservar y mejorar el uso
                 racional de los espacios públicos y privados.</p>
@@ -98,7 +99,7 @@
 
         <section>
             <div class="option" id="gastronomia">
-                <h2>Sabor, pasión y tradición en cada plato´.</h2>
+                <h2>Sabor, pasión y tradición en cada plato.</h2>
 
 
                 <div class="section gastronomia-section">
@@ -253,7 +254,7 @@
                         </figure>
                         <div class="contenido">
                             <h4>Parque Nacional El Cocuy</h4>
-                            <p>Te gusta el senderismo y paisajes inolvidables?... Ven y conoce uno de los parques
+                            <p>Te gusta ver paisajes inolvidables?... Ven y conoce uno de los parques
                                 nacionales más grandes de Colombia.</p>
                             <a href="https://www.parquesnacionales.gov.co/nuestros-parques/pnn-el-cocuy/"
                                 target="_blank">Conoce más</a>
@@ -266,8 +267,7 @@
                         </figure>
                         <div class="contenido">
                             <h4>Sendero laguna grande</h4>
-                            <p>Ven a disfrutar de la belleza paisajística que ofrece el camino como: la cueva de la
-                                Cuchumba, el valle de los frailejones.</p>
+                            <p>Ven a disfrutar de la belleza paisajística que ofrece laguna grande</p>
                             <a href="https://situr.boyaca.gov.co/atractivo-turistico/laguna-grande-de-la-sierra/"
                                 target="_blank">Conoce más</a>
                         </div>
