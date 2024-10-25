@@ -102,10 +102,10 @@ input {
         height: 50px;
         align-items: center;
         margin-top: 0%;
-        width: 225px;
+        width: 350px;
 }
 
-}
+
 
 .btn {
     margin-top: 5px;
@@ -120,6 +120,7 @@ input {
     margin-top: 0%;
     /*margen superior*/
 
+}
 }
 
 
@@ -764,7 +765,7 @@ body {
 
     .footer .grupo-1 .red-social .fa {
         margin: 10px;
-        /*margen
+        /*margen*/
         margin-left:130px; /*margen izquierda*/
     }
 

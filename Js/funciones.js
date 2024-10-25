@@ -16,7 +16,7 @@ function buscar() {
     //Para que salga alerta cuando el nombre del municipio no se encuentra en la constante opciones//
     
     else if (!opciones.includes(busqueda)){
-        alert("Lo sentimos, aún no tenemos información de este municipio:" + busqueda);
+        alert("Lo sentimos, aún no tenemos información de:" + busqueda);
     }
 
     else if (busqueda == "raquira") {

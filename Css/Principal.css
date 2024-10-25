@@ -13,16 +13,31 @@
 .nav img{
     width: 110px;
     height: 110px;
-    margin-left: 150px;
+    margin-left: 130px;/*margen izquierda*/
+    display: flex; /*usa flexbox para alinear elementos*/
 }
+
+/*aplicar estilos especificos cuando el ancho de la pantalla es menor o = 768px*/
+@media(max-width:768px) {
+
+    .nav img {
+            width: 85px;
+            height: 85px;
+            align-items: left; /*coloca el logo a  izquierda*/
+            margin-top: 25px;/*margen superior*/
+            margin-left: 5px; /*margen a la izquierda*/
+    }
+    }
 
 /*estilos de barra de busqueda*/
 
 .search{
-    position: absolute;
-    left: 25%;
-    top: 6%;
+    position: absolute;/*crear elemntos que se posicionen en relacion con su padre*/
+    left: 25%;/*posicion horizontal en relacion con su padre*/
+    top: 6%;/*posicion vertical en relacion con su padre*/
     padding: 6px;
+    display: flex;/*usa flexbox para alinear elementos*/
+    max-width: 1100px; /*ancho maximo que puede tener un elemento*/
 }
 
 input{
@@ -38,6 +53,7 @@ input{
     text-align: left;
     background: white;
     font-family:"Gloria Hallelujah" ;
+    display: flex;/*usa flexbox para alinear elementos*/
 }
 
 .btn{
@@ -60,6 +76,31 @@ input{
     text-align: center;
  }
 
+ /*aplicar estilos especificos cuando el ancho de la pantalla es menor o = 768px*/
+@media(max-width:768px) {
+
+    .search {
+            height: 50px;
+            align-items: center;
+            margin-top: 0%;
+            width: 350px;
+    }
+    
+    
+    .btn {
+        margin-top: 5px;
+        width: 35px;
+        height: 35px;
+    
+    }
+    
+    .btn i {
+        text-align: center;
+        font-size: 18px;
+        margin-top: 0%;/*margen superior*/
+    
+    }
+    }
 
   /*carrousel*/
 
@@ -70,21 +111,21 @@ input{
 }
 
 .slider{
-    display: flex;
-    aspect-ratio: 16 / 9; /*definir como se va a ver la imagen*/
-    overflow-x: hidden; /*parte de la imagen que salga de contenedor se oculte*/
-    scroll-snap-type: x mandatory; /*establecer como se desplaza la imagen*/
-    scroll-behavior: smooth; /*como sera el movimiento en la transicion*/
+    display: flex;/*usa flexbox para alinear elementos*/
+    overflow-x: hidden;/*parte de la imagen que salga de contenedor se oculte*/
+    scroll-snap-type: x mandatory;/*establecer como se desplaza la imagen*/
+    scroll-behavior: smooth;/*como sera el movimiento en la transicion*/
     box-shadow: 0 .25rem 5rem #21212126;
     border-radius: .7rem;
-    width: 1340px;
+    width: auto;
     height: 360px;
 }
 
 .slider img{
-    flex: 1 0 100%; /*cuanto va a crecer cuando tenga un espacio a uno -que tan pequeño-tamañoelemento*/
+    flex: 1 0 100%;/*cuanto va a crecer cuando tenga un espacio a uno -que tan pequeño-tamañoelemento*/
     scroll-snap-align: start;/*que se posicione sobre primer elemento del scroll*/
-    object-fit: cover;
+    object-fit: cover;/*controla comportamiento de elemento cuando contenido supera su tamaño*/
+
 }
 
 .slider-nav{
@@ -110,6 +151,16 @@ input{
     opacity: 1;
 }
 
+/*aplicar estilos especificos cuando el ancho de la pantalla es menor o = 768px*/
+@media(max-width:768px) {
+
+    .slider {
+        width: auto;
+        height: 200px;
+        border-radius: 0.5rem;
+    }
+}
+
 /*section text-section*/
 
 .text-section, p{
@@ -132,6 +183,29 @@ input{
         font-style: normal;  
         margin: 3px auto;
         padding: 3px;
+    }
+    @media(max-width:768px) {
+
+        .text-section h1 {
+            font-size: 35px;
+        }
+    
+        .text-section,p {
+            font-size: 15px;
+            margin-top: 1px;
+            padding: 10px;
+            text-align: justify;
+        }
+
+        .text-section h2 {
+            font-size: 18px;
+            margin-bottom: 2px;
+        }
+    
+        .text-section h3 {
+            font-size: 23px;
+            margin-bottom: 2px;
+        }
     }
         
     /*sections*/
